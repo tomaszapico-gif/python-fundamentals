@@ -1,0 +1,8 @@
+# Este proyecto usa exclusivamente la biblioteca estándar de Python.
+# No hay dependencias externas que instalar.
+#
+# Decisión: el objetivo es practicar fundamentos (strings, bucles, archivos,
+# algoritmos). Bibliotecas como pandas resolverían automáticamente lo que el
+# proyecto busca enseñar, y unittest ya viene incluido con Python.
+#
+# Versión de Python recomendada: 3.10 o superior.

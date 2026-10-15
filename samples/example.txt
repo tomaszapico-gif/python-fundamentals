@@ -1,0 +1,16 @@
+El viaje del pequeño programador
+
+Lucía empezó a programar un lunes de otoño. Su primer programa mostraba "Hola, mundo"   en la pantalla,
+y ese mensaje simple le pareció mágico. ¿Cómo podía una computadora obedecer unas pocas líneas de texto?
+
+Al principio, cada error la frustraba. Pero aprendió que un error no es un fracaso: es una pista.
+Leía el mensaje, buscaba la línea indicada y probaba de nuevo. Probar, fallar y volver a probar.
+
+Con el tiempo descubrió las variables, los bucles y las funciones.
+Una función es como una receta: recibe ingredientes, sigue unos pasos y devuelve un resultado.
+Un bucle repite pasos; una variable guarda datos. ¡Todo empezaba a tener sentido!
+
+Un día escribió un programa que contaba palabras. Lo probó con una canción, con un cuento
+y con el pingüino de peluche que su hermano había bautizado "Señor Ñandú" (nadie sabe por qué).
+
+Hoy Lucía sigue programando. El programa crece, la programadora también.

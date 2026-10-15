@@ -1,0 +1,36 @@
+# Bytecode y cachés de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg-info/
+
+# Pruebas y cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Informes generados por la aplicación (se conserva la carpeta vacía)
+reports/*
+!reports/.gitkeep
+
+# Ejercicios de práctica personales
+practice/
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

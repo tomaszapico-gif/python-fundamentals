@@ -1,0 +1,13 @@
+sku,product,category,quantity,unit_price,supplier
+A-100,Cuaderno rayado A4,Librería,120,850.50,Papelera del Sur
+A-101,Lapicera azul,Librería,300,320,Papelera del Sur
+A-102,Resma de papel 500 hojas,Librería,45,5200,Distribuidora Norte
+B-200,Mouse inalámbrico,Tecnología,30,15999.99,TecnoSur
+B-201,Teclado USB,Tecnología,,18500,TecnoSur
+B-202,"Auriculares, con micrófono",Tecnología,18,22000,TecnoSur
+C-300,Taza de cerámica,Bazar,doce,4500,Cerámicas Andinas
+C-301,Termo de acero 1 L,Bazar,25,31000,Bazar Total
+C-302,Mate de calabaza,Bazar,40,6800,Bazar Total,EXTRA
+D-400,Silla de oficina,Muebles,8,95000,Muebles Río
+D-401,Escritorio de pino,Muebles,5,142000,
+D-402,Lámpara de escritorio,Muebles,14,abc,Muebles Río
