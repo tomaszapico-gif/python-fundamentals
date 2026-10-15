@@ -61,71 +61,6 @@ Quien empieza a programar suele aprender conceptos sueltos (un bucle, una funci�
 - **Python 3.10 o superior** (recomendado). La suite de pruebas se ejecutó con éxito en Python 3.9, 3.11, 3.12 y 3.13; Python 3.10 no se probó directamente.
 - Git (opcional, para clonar el repositorio).
 
-## Instalación paso a paso
-
-```bash
-# 1. Clonar el repositorio (o descargar el ZIP y descomprimirlo)
-git clone https://github.com/<tu-usuario>/python-fundamentals.git
-cd python-fundamentals
-
-# 2. (Opcional, recomendado) Crear y activar un entorno virtual
-python -m venv .venv
-# Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-# Windows (cmd):
-.venv\Scripts\activate.bat
-# Linux / macOS:
-source .venv/bin/activate
-
-# 3. Instalar dependencias (no hay paquetes externos; el comando no instala nada)
-python -m pip install -r requirements.txt
-```
-
-> En Windows, si `python` no se reconoce, probá con `py`. Si PowerShell bloquea la activación del entorno, ejecutá una vez `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`.
-
-## Ejecutar la aplicación
-
-Desde la raíz del repositorio:
-
-```bash
-python -m src.main
-```
-
-También funciona indicando la ruta del archivo desde cualquier carpeta:
-
-```bash
-python ruta/al/proyecto/src/main.py
-```
-
-Para guardar los informes en otra carpeta:
-
-```bash
-python -m src.main --reports-dir mis_informes
-```
-
-Una carpeta de informes relativa (como `mis_informes`) se interpreta desde la carpeta actual de la terminal y se crea al exportar si no existe. También se puede cambiar durante la ejecución con la opción 3 del menú principal.
-
-Las rutas relativas de archivos que se escriben en el menú (por ejemplo `samples/example.txt`) se buscan primero desde la carpeta actual y, si no existen allí, desde la raíz del proyecto.
-
-## Ejecutar las pruebas
-
-```bash
-# Toda la suite
-python -m unittest discover -s tests -v
-
-# Un módulo
-python -m unittest tests.test_text_analyzer -v
-python -m unittest tests.test_search_algorithms -v
-python -m unittest tests.test_sorting_algorithms -v
-python -m unittest tests.test_csv_analyzer -v
-python -m unittest tests.test_file_handler -v
-python -m unittest tests.test_report_generator -v
-python -m unittest tests.test_analyzer -v      # integración (archivos reales)
-python -m unittest tests.test_main -v          # interfaz de consola simulada
-```
-
-La prueba de "archivo sin permisos de lectura" se omite automáticamente en Windows y cuando se ejecuta como administrador/root, porque en esos casos no se puede reproducir la falta de permisos.
-
 ## Ejemplos de uso
 
 Sesión típica:
@@ -241,34 +176,6 @@ Se omitieron 2 registro(s) cuyo valor no es un número válido.
 
 El detalle completo está en los docstrings de `src/text_analyzer.py` y `src/csv_analyzer.py`.
 
-## Estructura de carpetas
-
-```text
-python-fundamentals/
-├── src/
-│   ├── __init__.py
-│   ├── main.py                 # interfaz de consola (menús)
-│   ├── analyzer.py             # coordina archivos + análisis + informes
-│   ├── text_analyzer.py        # análisis de texto (funciones puras)
-│   ├── csv_analyzer.py         # análisis de registros CSV
-│   ├── search_algorithms.py    # búsqueda lineal y binaria
-│   ├── sorting_algorithms.py   # bubble sort y ordenamientos auxiliares
-│   ├── file_handler.py         # lectura/escritura segura de archivos
-│   └── report_generator.py     # formato y exportación de informes
-├── tests/                      # pruebas unitarias y de integración (unittest)
-├── samples/
-│   ├── example.txt
-│   └── inventory.csv           # inventario ficticio con errores intencionales
-├── reports/                    # informes generados (ignorados por Git)
-├── docs/
-│   ├── ARCHITECTURE.md
-│   ├── ALGORITHMS.md
-│   └── LEARNING_GUIDE.md
-├── README.md
-├── requirements.txt
-├── .gitignore
-└── LICENSE
-```
 
 ## Algoritmos implementados
 
